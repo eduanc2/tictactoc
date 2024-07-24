@@ -1,4 +1,4 @@
-let playerText = document.getElementById("playerText");
+let gameText = document.getElementById("gameText");
 let restartBtn = document.getElementById("restartBtn");
 let boxes = Array.from(document.getElementsByClassName("box"));
 
@@ -24,7 +24,7 @@ function boxClicked(e) {
         e.target.innerText=currentPlayer;
 
         if(playerHasWon()!==false){
-            playerText=`${currentPlayer} has won!`;
+            gameText=`${currentPlayer} has won!`;
             let winning_blocks= playerHasWon();
             winning_blocks.map(box=>boxes[box].style.backgroundColor=winningIndicator);
             return;
@@ -69,7 +69,7 @@ function restart(){
         box.innerHTML="";
         box.style.backgroundColor="";
     })
-    playerText ="Tic Tac Toe"
+    gameText ="Tic Tac Toe"
     currentPlayer =X_TEXT
 }
 

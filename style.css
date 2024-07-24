@@ -18,7 +18,7 @@ h1 {
     text-transform: uppercase;
 }
 
-.container {
+.content {
     padding: 40px;
     height: 100vh;
     display: flex;

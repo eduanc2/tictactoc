@@ -24,7 +24,7 @@ function boxClicked(e) {
         e.target.innerText=currentPlayer;
 
         if(playerHasWon()!==false){
-            gameText.innerText=`${currentPlayer} has won! / has ganado`;
+            gameText.innerText=`${currentPlayer} has won! / ganador`;
             let winning_blocks= playerHasWon();
             winning_blocks.map(box=>boxes[box].style.backgroundColor=winningIndicator);
             return;
